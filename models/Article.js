@@ -7,9 +7,15 @@ const ArticleSchema = new Schema({
         type: String,
         required: true
     },
+    description: {
+        type: String
+    },
     link: {
         type: String,
         required: true
+    },
+    author: {
+        type: String
     },
     comment: [{
         type: Schema.Types.ObjectId,
